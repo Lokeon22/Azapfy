@@ -19,7 +19,7 @@ export default function Home() {
     fetch(...args).then((res) => res.json());
 
   const { data, error }: { data: CardPreview[]; error: any } = useSWR(
-    "http://homologacao3.azapfy.com.br/api/ps/metahumans",
+    "https://heros-nh8x.onrender.com/azapfy-heros",
     fetcher,
     { refreshInterval: 60 * 60 * 24 } // 24 hours
   );
